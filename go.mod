@@ -4,12 +4,7 @@ go 1.25.0
 
 require github.com/gofiber/fiber/v3 v3.0.0-rc.3
 
-require (
-	filippo.io/edwards25519 v1.1.0 // indirect
-	github.com/golang-migrate/migrate/v4 v4.19.0 // indirect
-	github.com/hashicorp/errwrap v1.1.0 // indirect
-	github.com/hashicorp/go-multierror v1.1.1 // indirect
-)
+require filippo.io/edwards25519 v1.1.0 // indirect
 
 require (
 	github.com/andybalholm/brotli v1.2.0 // indirect

@@ -12,7 +12,8 @@ type HandlerConfig struct {
 func Controller() {
 	app := fiber.New()
 	h := HandlerConfig{}
-	app.Post("/links/*", h.PostLink(fiber.NewDefaultCtx(app)))
 
-	log.Fatal(app.Listen(":3000"))
+	app.Post("/links", h.PostLink)
+
+	log.Fatal("running on localhost:3000", app.Listen(":3000"))
 }
